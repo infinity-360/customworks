@@ -1,0 +1,19 @@
+/* sacola: painel que desce da nav, igual na loja e nas peças */
+.bag {
+  position: fixed; top: calc(var(--top) * 2 + 36px); right: var(--gut); z-index: 130; width: min(420px, calc(100vw - var(--gut) * 2));
+  background: var(--bg); border: 1px solid var(--rule); padding: 18px 20px 20px; box-shadow: 0 20px 60px -30px rgba(22, 25, 27, 0.35);
+  opacity: 0; transform: translateY(-10px); visibility: hidden; transition: opacity 0.35s var(--in), transform 0.35s var(--in), visibility 0s 0.35s;
+}
+.bag-open .bag { opacity: 1; transform: none; visibility: visible; transition: opacity 0.6s var(--out), transform 0.6s var(--out); }
+.bag__head { display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--rule); }
+.bag__list { max-height: 46vh; overflow: auto; }
+.bag__rm:hover { color: var(--fg); }
+.bag__list li { display: grid; grid-template-columns: 1fr auto auto; gap: 12px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
+.bag__list li.bag__empty { display: block; font-size: 14px; }
+.bag__total { display: flex; justify-content: space-between; padding: 14px 0 16px; font-size: 16px; }
+.bag__go {
+  display: flex; justify-content: center; align-items: center; height: 50px; border-radius: 99px; background: var(--ink); color: #fff; font-size: 15px;
+  transition: background-color 0.5s var(--out);
+}
+.bag__go:hover { background: var(--red); }
+@media (max-width: 760px) { .bag { top: 64px; } }

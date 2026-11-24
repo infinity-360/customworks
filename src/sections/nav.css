@@ -1,0 +1,61 @@
+/* logo único: .brand (fixo, some com a nav) > .brand__in (o GSAP escala) */
+.brand {
+  position: fixed; left: var(--gut); top: var(--top); z-index: 120; color: var(--fg);
+  transition: transform 0.6s var(--out), color 0.4s;
+}
+.brand__in { display: inline-block; font-size: var(--logo); transform-origin: 0 0; padding: 0; }
+.is-loading .brand { z-index: 95; }
+.is-loading .brand__in { padding: 0.2em; margin: -0.2em; }
+
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 110; height: calc(var(--top) * 2 + 36px);
+  display: flex; align-items: center; justify-content: flex-end; gap: clamp(20px, 3vw, 52px);
+  padding: 0 var(--gut); font-size: 15px; color: var(--fg);
+  transition: transform 0.6s var(--out), color 0.4s;
+}
+.nav::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; opacity: 0;
+  background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--rule); transition: opacity 0.4s, background-color 0.4s;
+}
+.nav-solid .nav::before { opacity: 1; }
+.nav-hidden:not(.menu-open):not(.bag-open) .nav, .nav-hidden:not(.menu-open):not(.bag-open) .brand { transform: translateY(-140%); }
+.nav-red .nav, .nav-red .brand { color: var(--on-red); }
+.nav-red .nav::before { background: var(--red); border-color: transparent; }
+
+.nav__links { display: flex; gap: 26px; transition: opacity 0.5s var(--out), transform 0.6s var(--out); }
+html:not(.nav-top) .nav__links { opacity: 0; transform: translateY(-8px); pointer-events: none; }
+.nav__bag { display: inline-flex; align-items: center; gap: 9px; }
+.nav__count {
+  display: inline-grid; place-items: center; min-width: 21px; height: 21px; padding: 0 6px; border-radius: 99px;
+  background: var(--fg); color: var(--bg); font-size: 10px; letter-spacing: 0; transition: background-color 0.4s;
+}
+.nav__count.is-full { background: var(--red); color: #fff; }
+.nav-red .nav__count { background: var(--on-red); color: var(--red); }
+.nav__menu { position: relative; width: 42px; height: 20px; }
+.nav__menu i { position: absolute; left: 0; right: 0; height: 1.5px; background: currentColor; transition: transform 0.6s var(--linha), top 0.6s var(--linha); }
+.nav__menu i:nth-child(1) { top: 5px; }
+.nav__menu i:nth-child(2) { top: 13px; }
+.menu-open .nav__menu i:nth-child(1) { top: 9px; transform: rotate(14deg); }
+.menu-open .nav__menu i:nth-child(2) { top: 9px; transform: rotate(-14deg); }
+
+/* menu em tela cheia, de cima para baixo */
+.menu {
+  position: fixed; inset: 0; z-index: 105; background: var(--bg); color: var(--fg);
+  display: flex; flex-direction: column; justify-content: space-between; padding: calc(var(--top) * 2 + 80px) var(--gut) var(--gut);
+  clip-path: inset(0 0 100% 0); transition: clip-path 0.9s var(--linha); visibility: hidden;
+}
+.menu-open .menu { clip-path: inset(0 0 0 0); visibility: visible; }
+.menu:not([aria-hidden='false']) { transition: clip-path 0.9s var(--linha), visibility 0s 0.9s; }
+.menu__list { display: flex; flex-direction: column; }
+.menu__list a { font-size: clamp(64px, 11vw, 190px); line-height: 0.98; letter-spacing: -0.03em; width: fit-content; }
+.menu__list a:hover { font-style: italic; }
+.menu__foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.menu-open .nav, .menu-open .brand { color: var(--fg); }
+.menu-open .nav::before { opacity: 0; }
+
+@media (max-width: 760px) {
+  .nav { height: 64px; gap: 18px; font-size: 14px; }
+  .nav__links { display: none; }
+  .nav__menu { width: 32px; }
+}

@@ -1,0 +1,37 @@
+/* 03 Ateliê: palco preso por 170vh; foto à esquerda (metade da largura, altura toda abaixo da nav), relógio à direita */
+.atelie { position: relative; height: calc(100svh + 170vh); }
+.atelie__stage { position: sticky; top: 0; height: 100svh; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; }
+.atelie__fig { position: relative; overflow: hidden; margin-top: calc(var(--top) * 2 + 36px); background: var(--card); }
+.atelie__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 50%; will-change: transform, opacity; }
+.atelie__img + .atelie__img { opacity: 0; }
+.atelie__state { position: absolute; left: 16px; bottom: 14px; color: #fff; mix-blend-mode: difference; }
+.atelie__side { display: flex; flex-direction: column; padding: calc(var(--top) * 2 + 60px) var(--gut) var(--gut) clamp(28px, 4vw, 70px); }
+.atelie__t { font-size: 6.1vw; line-height: 0.98; letter-spacing: -0.03em; margin-top: 18px; }
+.clock { margin-top: auto; }
+.clock__time { font-size: 5.7vw; font-weight: 200; letter-spacing: -0.02em; line-height: 1; text-transform: none; font-variant-numeric: tabular-nums; }
+.clock__cap { margin-top: 10px; font-size: 15px; color: var(--dim); }
+.clock__bar { position: relative; height: 2px; background: var(--rule); margin-top: 18px; overflow: hidden; }
+.clock__bar i { position: absolute; inset: 0; background: var(--red); transform: scaleX(0); transform-origin: 0 50%; }
+.nums { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: clamp(30px, 4vw, 60px); border-top: 1px solid var(--rule); }
+.nums li { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 18px 16px 0 0; }
+.nums li + li { padding-left: 16px; border-left: 1px solid var(--rule); }
+.nums__v { font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 3vw, 52px); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.nums span.dim { font-size: 13px; line-height: 1.3; }
+.nums__tag { width: 44px; height: 44px; border-radius: 3px; position: absolute; right: 10px; top: 16px; object-fit: cover; }
+
+@media (max-width: 760px) {
+  .atelie__stage { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; padding-top: 72px; }
+  .atelie__fig { margin: 0 var(--gut); height: 31svh; order: 2; }
+  .atelie__side { display: contents; }
+  .atelie__k { order: 0; padding: 0 var(--gut); }
+  .atelie__t { order: 1; font-size: 13vw; padding: 0 var(--gut) 16px; margin-top: 8px; }
+  .clock { order: 3; margin: 18px var(--gut) 0; }
+  .clock__time { font-size: 15vw; }
+  .clock__cap { font-size: 13px; }
+  .nums { order: 4; margin: 18px var(--gut) var(--gut); }
+  .nums li { padding: 12px 8px 0 0; }
+  .nums li + li { padding-left: 10px; }
+  .nums__v { font-size: 28px; }
+  .nums span.dim { font-size: 11px; }
+  .nums__tag { display: none; }
+}

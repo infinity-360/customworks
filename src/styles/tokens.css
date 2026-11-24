@@ -1,0 +1,27 @@
+:root {
+  --bg: #fcfbfa;
+  --white: #ffffff;
+  --card: #f4f2f0;
+  --pill: #ecebe8;
+  --rule: #e4e2de;
+  --fg: #2f3a40;
+  --dim: #8a9196;
+  --red: #23411d;      /* o único acento: o verde do logo da Custom Works (o nome ficou do template) */
+  --ink: #16191b;
+  --on-red: #f7f8d8;   /* o creme do logo, texto sobre o verde */
+
+  --serif: 'Instrument Serif', 'Times New Roman', serif;
+  --text: 'Inter Tight Variable', 'Inter Tight', system-ui, sans-serif;
+  --mono: 'Geist Mono Variable', 'Geist Mono', ui-monospace, monospace;
+
+  --gut: clamp(20px, 2.8vw, 44px);
+  --top: clamp(18px, 2.4vw, 36px);
+  --logo: 12.6vw;
+
+  --out: cubic-bezier(0.16, 1, 0.3, 1);
+  --in: cubic-bezier(0.32, 0, 0.67, 0);
+  --linha: cubic-bezier(0.76, 0, 0.12, 1);
+}
+@media (max-width: 760px) {
+  :root { --logo: 19vw; }
+}

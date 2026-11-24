@@ -1,0 +1,41 @@
+/* 01 Hero + giro: palco preso; o canvas cobre o palco, o texto fica em camadas por cima, fora da peça */
+.giro { position: relative; height: calc(100svh + 360vh); }
+.giro__stage { position: sticky; top: 0; height: 100svh; overflow: hidden; }
+.giro__canvas { position: absolute; inset: 0; width: 100%; height: 100%; transform-origin: 50% 60%; will-change: filter, opacity; }
+
+.hero { position: absolute; inset: 0; pointer-events: none; }
+.hero__p { position: absolute; left: var(--gut); top: 41%; font-size: 1.47vw; line-height: 1.38; letter-spacing: -0.02em; max-width: 30vw; }
+.hero__pill { position: absolute; left: var(--gut); bottom: var(--gut); pointer-events: auto; opacity: 0; }
+.giro__hint { position: absolute; right: var(--gut); bottom: calc(var(--gut) + 14px); opacity: 0; }
+
+.mani { position: absolute; left: var(--gut); top: 50%; transform: translateY(-50%); visibility: hidden; pointer-events: none; }
+.mani__t { font-size: 3.05vw; line-height: 1.08; letter-spacing: -0.028em; width: 11.4em; max-width: 40vw; }
+.mani__t .w { display: inline-block; will-change: transform, filter, opacity; }
+
+/* ficha da peça: fios que se desenham da esquerda e texto que sai do desfoque, uma linha depois da outra */
+.specs { position: absolute; right: var(--gut); bottom: var(--gut); width: min(430px, 34vw); font-size: 11.5px; }
+.specs__row { position: relative; display: grid; grid-template-columns: 8.2em 1fr; gap: 12px; padding: 11px 0 10px; }
+.specs .mono { font-size: 11.5px; }
+.specs__row::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--rule); transform: scaleX(0); transform-origin: 0 50%; transition: transform 0.4s var(--in); }
+.specs__row > * { opacity: 0; filter: blur(6px); transform: translateY(6px); transition: opacity 0.35s var(--in), filter 0.35s var(--in), transform 0.35s var(--in); }
+.specs__row:first-child::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--rule); transform: scaleX(0); transform-origin: 0 50%; transition: transform 0.4s var(--in); }
+.specs.is-on .specs__row::after, .specs.is-on .specs__row::before { transform: scaleX(1); transition: transform 1.1s var(--out) calc(var(--i) * 0.09s); }
+.specs.is-on .specs__row > * { opacity: 1; filter: blur(0); transform: none; transition: opacity 1s var(--out) calc(0.1s + var(--i) * 0.09s), filter 1s var(--out) calc(0.1s + var(--i) * 0.09s), transform 1s var(--out) calc(0.1s + var(--i) * 0.09s); }
+.specs:not(.is-on) { pointer-events: none; }
+.specs__row--buy dt { color: var(--fg); }
+.specs__row--buy a { color: var(--red); }
+
+.giro__deg { position: absolute; left: var(--gut); bottom: calc(var(--gut) + 14px); opacity: 0; transition: opacity 0.4s var(--in); }
+.giro__deg.is-on { opacity: 1; transition: opacity 0.9s var(--out); }
+.giro__n { font-variant-numeric: tabular-nums; }
+
+@media (max-width: 760px) {
+  .giro { height: calc(100svh + 300vh); }
+  .hero__p { top: calc(var(--top) + 24vw * 1.05 + 22px); font-size: 15px; max-width: none; right: var(--gut); }
+  .hero__pill { bottom: 22px; }
+  .giro__hint { display: none; }
+  .giro__deg { left: auto; right: var(--gut); bottom: 34px; }
+  .mani { top: 92px; transform: none; right: var(--gut); }
+  .mani__t { font-size: 7.2vw; width: auto; max-width: none; }
+  .specs { display: none; }
+}

@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Custom Works Co. · Estampas personalizadas em Maringá</title>
+  <meta name="description" content="Estilo, marca e atitude em cada peça. Estampas em DTF sem quantidade mínima, de Maringá-PR para todo o Brasil. Orçamento pelo WhatsApp." />
+  <meta name="theme-color" content="#fcfbfa" />
+  <meta property="og:title" content="Custom Works Co." />
+  <meta property="og:description" content="Estilo, marca e atitude em cada peça. Estampas em DTF sem quantidade mínima, de Maringá-PR para todo o Brasil." />
+  <meta property="og:image" content="/img/og.webp" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <script>
+    (function () {
+      var d = document.documentElement, troca = false;
+      try { troca = !!sessionStorage.getItem('vulto:troca'); } catch (e) {}
+      var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (troca) d.classList.add('is-troca');
+      else if (!reduced && location.hash !== '#loja') d.classList.add('is-loading');
+      if (!reduced) d.classList.add('js-motion');
+      d.classList.add('is-booting', 'nav-top');
+      setTimeout(function () { if (!window.__booted) { d.classList.remove('is-loading', 'js-motion', 'is-booting', 'is-troca'); var l = document.querySelector('.loader'); if (l) l.remove(); } }, 5000);
+    })();
+  </script>
+  <style>
+    html { background: #fcfbfa; }
+    html.is-troca::after { content: ''; position: fixed; inset: 0; z-index: 300; background: #fff; }
+    .loader { position: fixed; inset: 0; z-index: 90; background: #fcfbfa; pointer-events: none; }
+    html:not(.is-loading) .loader { display: none; }
+    .is-loading .brand__in { opacity: 0; }
+    .is-booting *, .is-booting *::before, .is-booting *::after { transition: none !important; }
+    .js-motion:not(.motion-ready) body > :not(.loader) { visibility: hidden; }
+  </style>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <div class="loader" aria-hidden="true"></div>
+
+  <a class="brand" href="#top" aria-label="Custom Works, início"><span class="brand__in logo"><span class="logo__v">C</span>ustom.</span></a>
+
+  <header class="nav">
+    <nav class="nav__links" aria-label="Seções">
+      <a class="ul" href="#loja">Coleção</a>
+      <a class="ul" href="#atelie">Produção</a>
+      <a class="ul" href="#avise">Contato</a>
+    </nav>
+    <button class="nav__bag" type="button" aria-label="Orçamento, 0 peças" aria-expanded="false"><span>Orçamento</span><b class="nav__count mono">0</b></button>
+    <button class="nav__menu" type="button" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <nav class="menu__list" aria-label="Menu">
+      <a class="serif" href="#loja">Loja</a>
+      <a class="serif" href="#atelie">Produção</a>
+      <a class="serif" href="#sobre">Sobre</a>
+      <a class="serif" href="#avise">Contato</a>
+    </nav>
+    <p class="menu__foot mono dim"><span>Custom Works Co. · Maringá, PR · Envio para todo o Brasil</span><a class="ul" href="https://wa.me/5544999922218" target="_blank" rel="noopener">WhatsApp (44) 99992-2218</a></p>
+  </div>
+
+  <main>
+    <section class="giro" id="top" aria-label="Moletom personalizado">
+      <div class="giro__stage">
+        <canvas class="giro__canvas" aria-label="Moletom girando de frente às costas" role="img"></canvas>
+
+        <div class="hero">
+          <p class="hero__p" data-split>Estampas em DTF feitas em Maringá.<br />Sem quantidade mínima.<br />Entrega em todo o Brasil.</p>
+          <a class="pill hero__pill" href="#loja"><span class="pill__t" data-t="Ver a coleção">Ver a coleção</span></a>
+        </div>
+
+        <div class="mani mani--1"><p class="mani__t" data-blur>Estilo, marca e atitude em cada peça.</p></div>
+        <div class="mani mani--2"><p class="mani__t" data-blur>Você traz a ideia. A gente transforma em estampa, da arte à peça pronta.</p></div>
+
+        <dl class="specs">
+          <div class="specs__row"><dt class="mono dim">Peça</dt><dd class="mono">Moletom personalizado</dd></div>
+          <div class="specs__row"><dt class="mono dim">Estampa</dt><dd class="mono">DTF, frente e costas</dd></div>
+          <div class="specs__row"><dt class="mono dim">Arte</dt><dd class="mono">A sua ideia, no padrão Custom Works</dd></div>
+          <div class="specs__row"><dt class="mono dim">Pedido</dt><dd class="mono">Sem quantidade mínima</dd></div>
+          <div class="specs__row specs__row--buy"><dt class="mono">Sob consulta</dt><dd class="mono"><a class="ul" href="https://wa.me/5544999922218?text=Ol%C3%A1%2C%20Custom%20Works!%20Quero%20um%20or%C3%A7amento%20de%20moletom%20personalizado." target="_blank" rel="noopener">Pedir no WhatsApp →</a></dd></div>
+        </dl>
+
+        <p class="giro__deg mono dim">Moletom · <span class="giro__n">000</span>°</p>
+        <p class="giro__hint mono dim">Role devagar</p>
+      </div>
+    </section>
+
+    <section class="loja" id="loja" aria-label="Loja">
+      <div class="loja__head">
+        <h2 class="loja__t serif" data-chars>Loja</h2>
+        <p class="loja__p" data-split>Camisetas prontas para pedir.<br />Escolha a estampa e o tamanho e chame no WhatsApp.</p>
+      </div>
+      <!-- grade:inicio (gerado por scripts/paginas.mjs a partir de src/data/pecas.js; não editar à mão) -->
+      <div class="filtros" role="toolbar" aria-label="Filtrar a loja">
+        <button class="filtros__b mono is-on" type="button" data-cat="*" aria-pressed="true">Tudo<sup>34</sup></button>
+        <button class="filtros__b mono" type="button" data-cat="Fórmula 1" aria-pressed="false">Fórmula 1<sup>4</sup></button>
+        <button class="filtros__b mono" type="button" data-cat="Country" aria-pressed="false">Country<sup>9</sup></button>
+        <button class="filtros__b mono" type="button" data-cat="Fé" aria-pressed="false">Fé<sup>14</sup></button>
+        <button class="filtros__b mono" type="button" data-cat="Família" aria-pressed="false">Família<sup>5</sup></button>
+        <button class="filtros__b mono" type="button" data-cat="Humor" aria-pressed="false">Humor<sup>2</sup></button>
+        <p class="filtros__n mono dim"><span class="filtros__count">34</span> estampas · Sob consulta</p>
+      </div>
+      <ul class="grade">
+        <li class="card" data-cat="Fórmula 1">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/senna-mp4-4/" data-troca aria-label="Senna MP4/4, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/senna-mp4-4.webp" alt="Senna MP4/4: Camiseta masculina de algodão com Ayrton Senna e a McLaren MP4/4 de 1988 na frente." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">01</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="senna-mp4-4" data-size="P">P</button><button class="mono" type="button" data-add="senna-mp4-4" data-size="M">M</button><button class="mono" type="button" data-add="senna-mp4-4" data-size="G">G</button><button class="mono" type="button" data-add="senna-mp4-4" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/senna-mp4-4/" data-troca tabindex="-1">
+            <span class="card__name">Senna MP4/4</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fórmula 1</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Country">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/poeira-bota-e-estrada/" data-troca aria-label="Poeira, bota e estrada, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/poeira-bota-e-estrada.webp" alt="Poeira, bota e estrada: Camiseta country masculina, 100% algodão, com a arte &quot;Poeira, bota e estrada&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">02</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="poeira-bota-e-estrada" data-size="P">P</button><button class="mono" type="button" data-add="poeira-bota-e-estrada" data-size="M">M</button><button class="mono" type="button" data-add="poeira-bota-e-estrada" data-size="G">G</button><button class="mono" type="button" data-add="poeira-bota-e-estrada" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/poeira-bota-e-estrada/" data-troca tabindex="-1">
+            <span class="card__name">Poeira, bota e estrada</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Country</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/guadalupe-protecao-e-fe/" data-troca aria-label="Guadalupe, proteção e fé, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/guadalupe-protecao-e-fe.webp" alt="Guadalupe, proteção e fé: Camiseta feminina 100% algodão com Nossa Senhora de Guadalupe entre rosas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">03</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="guadalupe-protecao-e-fe" data-size="P">P</button><button class="mono" type="button" data-add="guadalupe-protecao-e-fe" data-size="M">M</button><button class="mono" type="button" data-add="guadalupe-protecao-e-fe" data-size="G">G</button><button class="mono" type="button" data-add="guadalupe-protecao-e-fe" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/guadalupe-protecao-e-fe/" data-troca tabindex="-1">
+            <span class="card__name">Guadalupe, proteção e fé</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/ele-vive-ele-reina/" data-troca aria-label="Ele vive, Ele reina, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/ele-vive-ele-reina.webp" alt="Ele vive, Ele reina: Camiseta masculina cristã, 100% algodão, com o leão &quot;Ele vive, Ele reina&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">04</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="ele-vive-ele-reina" data-size="P">P</button><button class="mono" type="button" data-add="ele-vive-ele-reina" data-size="M">M</button><button class="mono" type="button" data-add="ele-vive-ele-reina" data-size="G">G</button><button class="mono" type="button" data-add="ele-vive-ele-reina" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/ele-vive-ele-reina/" data-troca tabindex="-1">
+            <span class="card__name">Ele vive, Ele reina</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fórmula 1">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/senna-lenda/" data-troca aria-label="Senna Lenda, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/senna-lenda.webp" alt="Senna Lenda: Camiseta 100% algodão com Ayrton Senna, a assinatura e a MP4/4." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">05</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="senna-lenda" data-size="P">P</button><button class="mono" type="button" data-add="senna-lenda" data-size="M">M</button><button class="mono" type="button" data-add="senna-lenda" data-size="G">G</button><button class="mono" type="button" data-add="senna-lenda" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/senna-lenda/" data-troca tabindex="-1">
+            <span class="card__name">Senna Lenda</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fórmula 1</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Country">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/alma-de-peao/" data-troca aria-label="Alma de peão, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/alma-de-peao.webp" alt="Alma de peão: Camiseta country masculina, 100% algodão, com a arte &quot;Alma de peão&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">06</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="alma-de-peao" data-size="P">P</button><button class="mono" type="button" data-add="alma-de-peao" data-size="M">M</button><button class="mono" type="button" data-add="alma-de-peao" data-size="G">G</button><button class="mono" type="button" data-add="alma-de-peao" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/alma-de-peao/" data-troca tabindex="-1">
+            <span class="card__name">Alma de peão</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Country</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Família">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/tal-pai-tal-filha/" data-troca aria-label="Tal pai, tal filha, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/tal-pai-tal-filha.webp" alt="Tal pai, tal filha: Kit de camisetas 100% algodão para pai e filha, &quot;Tal pai&quot; e &quot;Tal filha&quot;." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">07</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="tal-pai-tal-filha" data-size="A combinar">A combinar</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/tal-pai-tal-filha/" data-troca tabindex="-1">
+            <span class="card__name">Tal pai, tal filha</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Família</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/santa-rita-de-cassia/" data-troca aria-label="Santa Rita de Cássia, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/santa-rita-de-cassia.webp" alt="Santa Rita de Cássia: Camiseta feminina 100% algodão com Santa Rita de Cássia e rosas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">08</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="santa-rita-de-cassia" data-size="P">P</button><button class="mono" type="button" data-add="santa-rita-de-cassia" data-size="M">M</button><button class="mono" type="button" data-add="santa-rita-de-cassia" data-size="G">G</button><button class="mono" type="button" data-add="santa-rita-de-cassia" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/santa-rita-de-cassia/" data-troca tabindex="-1">
+            <span class="card__name">Santa Rita de Cássia</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Country">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/respeita-o-cowboy/" data-troca aria-label="Respeita o cowboy, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/respeita-o-cowboy.webp" alt="Respeita o cowboy: Camiseta country masculina, 100% algodão, com a arte &quot;Respeita o cowboy&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">09</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="respeita-o-cowboy" data-size="P">P</button><button class="mono" type="button" data-add="respeita-o-cowboy" data-size="M">M</button><button class="mono" type="button" data-add="respeita-o-cowboy" data-size="G">G</button><button class="mono" type="button" data-add="respeita-o-cowboy" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/respeita-o-cowboy/" data-troca tabindex="-1">
+            <span class="card__name">Respeita o cowboy</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Country</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Humor">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/procura-nu-gugo/" data-troca aria-label="Procura nu Gugo, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/procura-nu-gugo.webp" alt="Procura nu Gugo: Camiseta unissex de algodão fio 30.1 com o meme &quot;Procura nu Gugo&quot;." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">10</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="procura-nu-gugo" data-size="P">P</button><button class="mono" type="button" data-add="procura-nu-gugo" data-size="M">M</button><button class="mono" type="button" data-add="procura-nu-gugo" data-size="G">G</button><button class="mono" type="button" data-add="procura-nu-gugo" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/procura-nu-gugo/" data-troca tabindex="-1">
+            <span class="card__name">Procura nu Gugo</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Humor</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/sao-bento-cavaleiro/" data-troca aria-label="São Bento cavaleiro, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/sao-bento-cavaleiro.webp" alt="São Bento cavaleiro: Camiseta unissex 100% algodão com o cavaleiro medieval e a medalha de São Bento." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">11</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="sao-bento-cavaleiro" data-size="P">P</button><button class="mono" type="button" data-add="sao-bento-cavaleiro" data-size="M">M</button><button class="mono" type="button" data-add="sao-bento-cavaleiro" data-size="G">G</button><button class="mono" type="button" data-add="sao-bento-cavaleiro" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/sao-bento-cavaleiro/" data-troca tabindex="-1">
+            <span class="card__name">São Bento cavaleiro</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fórmula 1">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/senna-kit-2/" data-troca aria-label="Kit 2 Senna, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/senna-kit-2.webp" alt="Kit 2 Senna: Kit com duas camisetas masculinas Ayrton Senna, estampa grande, algodão." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">12</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="senna-kit-2" data-size="P">P</button><button class="mono" type="button" data-add="senna-kit-2" data-size="M">M</button><button class="mono" type="button" data-add="senna-kit-2" data-size="G">G</button><button class="mono" type="button" data-add="senna-kit-2" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/senna-kit-2/" data-troca tabindex="-1">
+            <span class="card__name">Kit 2 Senna</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fórmula 1</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Country">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/criado-no-campo/" data-troca aria-label="Criado no campo, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/criado-no-campo.webp" alt="Criado no campo: Camiseta country masculina, 100% algodão, com a arte &quot;Criado no campo&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">13</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="criado-no-campo" data-size="P">P</button><button class="mono" type="button" data-add="criado-no-campo" data-size="M">M</button><button class="mono" type="button" data-add="criado-no-campo" data-size="G">G</button><button class="mono" type="button" data-add="criado-no-campo" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/criado-no-campo/" data-troca tabindex="-1">
+            <span class="card__name">Criado no campo</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Country</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Família">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/natal-ho-ho-ho/" data-troca aria-label="Natal Ho Ho Ho, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/natal-ho-ho-ho.webp" alt="Natal Ho Ho Ho: Camisetas de Natal para a família toda, &quot;Ho Ho Ho&quot;. Monte o conjunto: tamanhos adulto e infantil, por unidade." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">14</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="natal-ho-ho-ho" data-size="Adulto">Adulto</button><button class="mono" type="button" data-add="natal-ho-ho-ho" data-size="Infantil">Infantil</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/natal-ho-ho-ho/" data-troca tabindex="-1">
+            <span class="card__name">Natal Ho Ho Ho</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Família</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/fe-acima-do-medo/" data-troca aria-label="Fé acima do medo, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/fe-acima-do-medo.webp" alt="Fé acima do medo: Camiseta masculina cristã, 100% algodão, com o leão &quot;Fé acima do medo&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">15</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="fe-acima-do-medo" data-size="P">P</button><button class="mono" type="button" data-add="fe-acima-do-medo" data-size="M">M</button><button class="mono" type="button" data-add="fe-acima-do-medo" data-size="G">G</button><button class="mono" type="button" data-add="fe-acima-do-medo" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/fe-acima-do-medo/" data-troca tabindex="-1">
+            <span class="card__name">Fé acima do medo</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fórmula 1">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/ayrton-senna-mclaren/" data-troca aria-label="Ayrton Senna McLaren, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/ayrton-senna-mclaren.webp" alt="Ayrton Senna McLaren: Camiseta masculina de algodão com Ayrton Senna na McLaren, estampa de automobilismo." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">16</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="ayrton-senna-mclaren" data-size="P">P</button><button class="mono" type="button" data-add="ayrton-senna-mclaren" data-size="M">M</button><button class="mono" type="button" data-add="ayrton-senna-mclaren" data-size="G">G</button><button class="mono" type="button" data-add="ayrton-senna-mclaren" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/ayrton-senna-mclaren/" data-troca tabindex="-1">
+            <span class="card__name">Ayrton Senna McLaren</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fórmula 1</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Country">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/nascido-no-campo/" data-troca aria-label="Nascido no campo, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/nascido-no-campo.webp" alt="Nascido no campo: Camiseta country masculina, 100% algodão, com a arte &quot;Nascido no campo&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">17</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="nascido-no-campo" data-size="P">P</button><button class="mono" type="button" data-add="nascido-no-campo" data-size="M">M</button><button class="mono" type="button" data-add="nascido-no-campo" data-size="G">G</button><button class="mono" type="button" data-add="nascido-no-campo" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/nascido-no-campo/" data-troca tabindex="-1">
+            <span class="card__name">Nascido no campo</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Country</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/guadalupe-fe-e-amor/" data-troca aria-label="Guadalupe, fé e amor, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/guadalupe-fe-e-amor.webp" alt="Guadalupe, fé e amor: Camiseta feminina com Nossa Senhora de Guadalupe, fé, amor e proteção." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">18</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="guadalupe-fe-e-amor" data-size="P">P</button><button class="mono" type="button" data-add="guadalupe-fe-e-amor" data-size="M">M</button><button class="mono" type="button" data-add="guadalupe-fe-e-amor" data-size="G">G</button><button class="mono" type="button" data-add="guadalupe-fe-e-amor" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/guadalupe-fe-e-amor/" data-troca tabindex="-1">
+            <span class="card__name">Guadalupe, fé e amor</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Família">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/tal-pai-tal-filho/" data-troca aria-label="Tal pai, tal filho, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/tal-pai-tal-filho.webp" alt="Tal pai, tal filho: Kit de camisetas 100% algodão para pai e filho, &quot;Tal pai&quot; e &quot;Tal filho&quot;." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">19</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="tal-pai-tal-filho" data-size="A combinar">A combinar</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/tal-pai-tal-filho/" data-troca tabindex="-1">
+            <span class="card__name">Tal pai, tal filho</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Família</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/sao-bento-medalha/" data-troca aria-label="São Bento medalha, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/sao-bento-medalha.webp" alt="São Bento medalha: Camiseta masculina católica, 100% algodão, com a medalha de São Bento nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">20</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="sao-bento-medalha" data-size="P">P</button><button class="mono" type="button" data-add="sao-bento-medalha" data-size="M">M</button><button class="mono" type="button" data-add="sao-bento-medalha" data-size="G">G</button><button class="mono" type="button" data-add="sao-bento-medalha" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/sao-bento-medalha/" data-troca tabindex="-1">
+            <span class="card__name">São Bento medalha</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Country">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/bruto-por-natureza/" data-troca aria-label="Bruto por natureza, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/bruto-por-natureza.webp" alt="Bruto por natureza: Camiseta country masculina, 100% algodão, com o touro &quot;Bruto por natureza&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">21</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="bruto-por-natureza" data-size="P">P</button><button class="mono" type="button" data-add="bruto-por-natureza" data-size="M">M</button><button class="mono" type="button" data-add="bruto-por-natureza" data-size="G">G</button><button class="mono" type="button" data-add="bruto-por-natureza" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/bruto-por-natureza/" data-troca tabindex="-1">
+            <span class="card__name">Bruto por natureza</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Country</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/sao-bento-cruz-sagrada/" data-troca aria-label="São Bento cruz sagrada, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/sao-bento-cruz-sagrada.webp" alt="São Bento cruz sagrada: Camiseta unissex 100% algodão, &quot;Cruz sagrada, seja minha luz&quot;, nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">22</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="sao-bento-cruz-sagrada" data-size="P">P</button><button class="mono" type="button" data-add="sao-bento-cruz-sagrada" data-size="M">M</button><button class="mono" type="button" data-add="sao-bento-cruz-sagrada" data-size="G">G</button><button class="mono" type="button" data-add="sao-bento-cruz-sagrada" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/sao-bento-cruz-sagrada/" data-troca tabindex="-1">
+            <span class="card__name">São Bento cruz sagrada</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Família">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/natal-feliz-natal/" data-troca aria-label="Natal Feliz Natal, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/natal-feliz-natal.webp" alt="Natal Feliz Natal: Camisetas &quot;Feliz Natal&quot; para pai, mãe e filhos. Venda por unidade, adulto e infantil." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">23</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="natal-feliz-natal" data-size="Adulto">Adulto</button><button class="mono" type="button" data-add="natal-feliz-natal" data-size="Infantil">Infantil</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/natal-feliz-natal/" data-troca tabindex="-1">
+            <span class="card__name">Natal Feliz Natal</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Família</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Country">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/mini-cowboy/" data-troca aria-label="Mini cowboy, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/mini-cowboy.webp" alt="Mini cowboy: Camiseta infantil country, o mini cowboy boiadeiro: chapéu na frente e o cavalo nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">24</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="mini-cowboy" data-size="Infantil">Infantil</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/mini-cowboy/" data-troca tabindex="-1">
+            <span class="card__name">Mini cowboy</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Country</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Country">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/bruto-de-verdade/" data-troca aria-label="Bruto de verdade, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/bruto-de-verdade.webp" alt="Bruto de verdade: Camiseta country masculina, 100% algodão, com o touro &quot;Bruto de verdade&quot;." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">25</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="bruto-de-verdade" data-size="P">P</button><button class="mono" type="button" data-add="bruto-de-verdade" data-size="M">M</button><button class="mono" type="button" data-add="bruto-de-verdade" data-size="G">G</button><button class="mono" type="button" data-add="bruto-de-verdade" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/bruto-de-verdade/" data-troca tabindex="-1">
+            <span class="card__name">Bruto de verdade</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Country</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/sao-bento-medalha-beneditina/" data-troca aria-label="Medalha beneditina, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/sao-bento-medalha-beneditina.webp" alt="Medalha beneditina: Camiseta católica 100% algodão com São Bento, a medalha beneditina e o mosteiro nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">26</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="sao-bento-medalha-beneditina" data-size="P">P</button><button class="mono" type="button" data-add="sao-bento-medalha-beneditina" data-size="M">M</button><button class="mono" type="button" data-add="sao-bento-medalha-beneditina" data-size="G">G</button><button class="mono" type="button" data-add="sao-bento-medalha-beneditina" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/sao-bento-medalha-beneditina/" data-troca tabindex="-1">
+            <span class="card__name">Medalha beneditina</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Humor">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/halloween-abobora/" data-troca aria-label="Halloween abóbora, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/halloween-abobora.webp" alt="Halloween abóbora: Camiseta unissex com o rosto de abóbora do Dia das Bruxas. Serve de fantasia." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">27</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="halloween-abobora" data-size="P">P</button><button class="mono" type="button" data-add="halloween-abobora" data-size="M">M</button><button class="mono" type="button" data-add="halloween-abobora" data-size="G">G</button><button class="mono" type="button" data-add="halloween-abobora" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/halloween-abobora/" data-troca tabindex="-1">
+            <span class="card__name">Halloween abóbora</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Humor</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Country">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/sangue-de-cowboy/" data-troca aria-label="Sangue de cowboy, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/sangue-de-cowboy.webp" alt="Sangue de cowboy: Camiseta country masculina, 100% algodão, com a arte &quot;Sangue de cowboy&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">28</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="sangue-de-cowboy" data-size="P">P</button><button class="mono" type="button" data-add="sangue-de-cowboy" data-size="M">M</button><button class="mono" type="button" data-add="sangue-de-cowboy" data-size="G">G</button><button class="mono" type="button" data-add="sangue-de-cowboy" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/sangue-de-cowboy/" data-troca tabindex="-1">
+            <span class="card__name">Sangue de cowboy</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Country</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/sao-bento-pax/" data-troca aria-label="São Bento PAX, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/sao-bento-pax.webp" alt="São Bento PAX: Camiseta católica 100% algodão, PAX e a adoração ao Santíssimo nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">29</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="sao-bento-pax" data-size="P">P</button><button class="mono" type="button" data-add="sao-bento-pax" data-size="M">M</button><button class="mono" type="button" data-add="sao-bento-pax" data-size="G">G</button><button class="mono" type="button" data-add="sao-bento-pax" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/sao-bento-pax/" data-troca tabindex="-1">
+            <span class="card__name">São Bento PAX</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Família">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/kit-3-tal-pai-tal-filha/" data-troca aria-label="Kit 3 Tal pai, tal filha, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/kit-3-tal-pai-tal-filha.webp" alt="Kit 3 Tal pai, tal filha: Kit com três camisetas 100% algodão para a família, &quot;Tal pai&quot; e &quot;Tal filha&quot;." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">30</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="kit-3-tal-pai-tal-filha" data-size="A combinar">A combinar</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/kit-3-tal-pai-tal-filha/" data-troca tabindex="-1">
+            <span class="card__name">Kit 3 Tal pai, tal filha</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Família</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/sao-bento-ora-et-labora/" data-troca aria-label="Ora et labora, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/sao-bento-ora-et-labora.webp" alt="Ora et labora: Camiseta católica 100% algodão com São Bento e o lema &quot;Ora et labora&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">31</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="sao-bento-ora-et-labora" data-size="P">P</button><button class="mono" type="button" data-add="sao-bento-ora-et-labora" data-size="M">M</button><button class="mono" type="button" data-add="sao-bento-ora-et-labora" data-size="G">G</button><button class="mono" type="button" data-add="sao-bento-ora-et-labora" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/sao-bento-ora-et-labora/" data-troca tabindex="-1">
+            <span class="card__name">Ora et labora</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/aparecida-filha-de-maria/" data-troca aria-label="Aparecida, filha de Maria, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/aparecida-filha-de-maria.webp" alt="Aparecida, filha de Maria: Camiseta feminina 100% algodão com Nossa Senhora Aparecida, &quot;Filha de Maria&quot;." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">32</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="aparecida-filha-de-maria" data-size="P">P</button><button class="mono" type="button" data-add="aparecida-filha-de-maria" data-size="M">M</button><button class="mono" type="button" data-add="aparecida-filha-de-maria" data-size="G">G</button><button class="mono" type="button" data-add="aparecida-filha-de-maria" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/aparecida-filha-de-maria/" data-troca tabindex="-1">
+            <span class="card__name">Aparecida, filha de Maria</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/sao-bento-vade-retro/" data-troca aria-label="Vade retro Satana, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/sao-bento-vade-retro.webp" alt="Vade retro Satana: Camiseta unissex 100% algodão com São Bento e o &quot;Vade retro Satana&quot; nas costas." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">33</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="sao-bento-vade-retro" data-size="P">P</button><button class="mono" type="button" data-add="sao-bento-vade-retro" data-size="M">M</button><button class="mono" type="button" data-add="sao-bento-vade-retro" data-size="G">G</button><button class="mono" type="button" data-add="sao-bento-vade-retro" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/sao-bento-vade-retro/" data-troca tabindex="-1">
+            <span class="card__name">Vade retro Satana</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+        <li class="card" data-cat="Fé">
+          <div class="card__media">
+            <a class="card__fig" href="/peca/guadalupe-presente/" data-troca aria-label="Guadalupe presente, sob consulta">
+              <img class="card__img card__img--1" src="/img/loja/guadalupe-presente.webp" alt="Guadalupe presente: Camiseta católica feminina 100% algodão com Nossa Senhora de Guadalupe. Um presente religioso." width="800" height="800" loading="lazy" decoding="async" />
+              <span class="card__n mono">34</span>
+            </a>
+            <div class="card__quick"><span class="mono dim">Orçar</span><span class="card__sizes"><button class="mono" type="button" data-add="guadalupe-presente" data-size="P">P</button><button class="mono" type="button" data-add="guadalupe-presente" data-size="M">M</button><button class="mono" type="button" data-add="guadalupe-presente" data-size="G">G</button><button class="mono" type="button" data-add="guadalupe-presente" data-size="GG">GG</button></span></div>
+          </div>
+          <a class="card__cap" href="/peca/guadalupe-presente/" data-troca tabindex="-1">
+            <span class="card__name">Guadalupe presente</span><span class="card__price">Sob consulta</span>
+            <span class="card__cat dim">Fé</span><span class="card__left mono dim">Ver a peça</span>
+          </a>
+        </li>
+      </ul>
+      <!-- grade:fim -->
+      <div class="loja__foot">
+        <p class="loja__big serif" data-split>Sua ideia.<br /><em>Nossa</em><br />estampa.</p>
+        <dl class="loja__terms">
+          <div><dt class="mono dim">Tamanhos</dt><dd>P ao GG; outros sob consulta</dd></div>
+          <div><dt class="mono dim">Pedido</dt><dd>Sem quantidade mínima</dd></div>
+          <div><dt class="mono dim">Envio</dt><dd>De Maringá para todo o Brasil</dd></div>
+          <div><dt class="mono dim">Orçamento</dt><dd>Pelo WhatsApp, (44) 99992-2218</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="atelie" id="atelie" aria-label="Produção">
+      <div class="atelie__stage">
+        <figure class="atelie__fig">
+          <img class="atelie__img" src="/img/producao-1.webp" alt="Arte de estampa sendo montada no computador" width="1100" height="1375" decoding="async" />
+          <img class="atelie__img" src="/img/producao-2.webp" alt="" width="1100" height="1375" decoding="async" />
+          <img class="atelie__img" src="/img/producao-3.webp" alt="" width="1100" height="1375" decoding="async" />
+          <figcaption class="atelie__state mono">Arte</figcaption>
+        </figure>
+        <div class="atelie__side">
+          <p class="atelie__k mono dim" data-split>Produção · Maringá, Paraná</p>
+          <h2 class="atelie__t serif" data-split>Da ideia<br />à peça pronta.</h2>
+          <div class="clock">
+            <p class="clock__time mono" aria-hidden="true"><span class="clock__h">000</span><span class="clock__m">%</span></p>
+            <p class="clock__cap" data-split>da arte aprovada ao pedido embalado</p>
+            <div class="clock__bar"><i></i></div>
+          </div>
+          <ul class="nums">
+            <li><b class="nums__v" data-count="1">0</b><span class="dim">peça já é pedido: sem quantidade mínima</span></li>
+            <li><b class="nums__v">DTF</b><span class="dim">estampas em DTF, padrão Custom Works</span></li>
+            <li><b class="nums__v">BR</b><span class="dim">de Maringá para todo o Brasil</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre" aria-label="Manifesto">
+      <div class="sobre__block">
+        <h2 class="sobre__t serif">
+          <span class="sobre__l" data-split>Seja diferente.</span>
+          <span class="sobre__l" data-split>Escolha</span>
+          <span class="sobre__l" data-split><em>Custom Works.</em></span>
+        </h2>
+        <img class="sobre__bust" src="/img/marca-linha.webp" alt="" width="768" height="947" loading="lazy" decoding="async" />
+        <p class="sobre__k mono">Custom Works Co. · Maringá · Paraná</p>
+        <a class="sobre__btn" href="#loja"><span class="pill__t" data-t="Ver a loja">Ver a loja</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot" id="avise">
+    <div class="foot__top">
+      <p class="foot__q" data-split>Tem uma ideia de estampa?<br />Conta pra gente.</p>
+      <form class="foot__form">
+        <label class="sr" for="ideia">Sua ideia</label>
+        <input id="ideia" type="text" name="ideia" placeholder="Uniforme, evento, marca própria…" required autocomplete="off" />
+        <button class="foot__btn" type="submit"><span class="pill__t" data-t="Enviar no WhatsApp">Enviar no WhatsApp</span></button>
+        <p class="foot__ok" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="foot__cols">
+      <div><p class="mono dim">Loja</p><a class="ul" href="#loja">Coleção</a><a class="ul" href="#loja">Country</a><a class="ul" href="#loja">Fé</a><a class="ul" href="#loja">Fórmula 1</a></div>
+      <div><p class="mono dim">Onde</p><p>Maringá · Paraná<br />Envio para todo o Brasil</p></div>
+      <div><p class="mono dim">Atendimento</p><a class="ul" href="https://wa.me/5544999922218" target="_blank" rel="noopener">WhatsApp (44) 99992-2218</a><a class="ul" href="https://linktr.ee/customworksmga" target="_blank" rel="noopener">Fale conosco</a></div>
+      <div><p class="mono dim">Siga</p><a class="ul" href="https://www.instagram.com/customworks.co/" target="_blank" rel="noopener">Instagram @customworks.co</a><a class="ul" href="https://www.tiktok.com/@customworksmga" target="_blank" rel="noopener">TikTok @customworksmga</a></div>
+    </div>
+    <div class="foot__legal mono dim">
+      <p>Custom Works Co. · Maringá, PR</p>
+      <p class="foot__credit">Moletom 3D baseado em “<a class="ul" href="https://sketchfab.com/3d-models/classic-black-flame-hoodie-0fd0effa321e456cb2a7467e2899b658" target="_blank" rel="noopener">Classic Black Flame Hoodie</a>” de <a class="ul" href="https://sketchfab.com/krrril_" target="_blank" rel="noopener">kril</a>, <a class="ul" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></p>
+      <p>© 2026</p>
+    </div>
+    <p class="foot__logo" aria-label="Custom Works."><span class="chars logo" aria-hidden="true"><span class="ch logo__v">C</span><span class="ch">u</span><span class="ch">s</span><span class="ch">t</span><span class="ch">o</span><span class="ch">m</span><span class="ch">&nbsp;</span><span class="ch">W</span><span class="ch">o</span><span class="ch">r</span><span class="ch">k</span><span class="ch">s</span><span class="ch">.</span></span></p>
+  </footer>
+
+  <p class="toast mono" role="status" aria-live="polite"></p>
+  <aside class="bag" aria-label="Orçamento" aria-hidden="true">
+    <p class="bag__head mono"><span>Orçamento</span><span class="bag__n">0 peças</span></p>
+    <ul class="bag__list"><li class="bag__empty dim">Nada aqui ainda.</li></ul>
+    <p class="bag__total"><span>Total</span><span class="bag__sum">0 peças</span></p>
+    <a class="bag__go" href="https://wa.me/5544999922218" target="_blank" rel="noopener"><span class="pill__t" data-t="Pedir orçamento no WhatsApp">Pedir orçamento no WhatsApp</span></a>
+  </aside>
+</body>
+</html>
